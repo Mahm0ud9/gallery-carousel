@@ -1,0 +1,51 @@
+img {
+  height: 330px;
+}
+
+figcaption {
+  --space-value: 10px;
+  position: absolute;
+  background-color: white;
+  bottom: var(--space-value);
+  right: var(--space-value);
+  left: var(--space-value);
+  text-align: center;
+  padding: 10px;
+  transform: translateY(120%);
+  -webkit-transform: translateY(120%);
+  -moz-transform: translateY(120%);
+  -ms-transform: translateY(120%);
+  -o-transform: translateY(120%);
+  transition: transform 0.4s ease-in-out;
+  -webkit-transition: transform 0.4s ease-in-out;
+  -moz-transition: transform 0.4s ease-in-out;
+  -ms-transition: transform 0.4s ease-in-out;
+  -o-transition: transform 0.4s ease-in-out;
+}
+figure:hover figcaption {
+  transform: translateY(0%);
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  -o-transform: translateY(0%);
+}
+
+.inner_div {
+  height: 480px;
+  background: url(../images/blog/blog2.webp);
+  background-size: 100% 100%;
+}
+.inner_div i {
+  cursor: pointer;
+}
+@media screen and (max-width: 1200px) {
+  img {
+    height: 270px;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 992px) {
+  img {
+    height: 200px;
+  }
+}
